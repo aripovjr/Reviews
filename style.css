@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(231, 231, 255);
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: rgb(32, 32, 54);
+  position: fixed;
+  top: 20px;
+  margin: 20px;
+}
+h1::after {
+  content: '';
+  height: 5px;
+  width: 60px;
+  background-color: rgb(138, 205, 228);
+  display: flex;
+  margin: 10px auto 0;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.img-container {
+  position: relative;
+}
+.img-container::before {
+  content: '❞';
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(138, 205, 228);
+  position: absolute;
+  top: 14px;
+  left: -14px;
+  z-index: 2;
+}
+.img-container::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(138, 205, 228);
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  z-index: 0;
+}
+
+h3 {
+  color: rgb(36, 36, 61);
+  font-size: 22px;
+}
+h4 {
+  color: rgb(82, 168, 248);
+  font-size: 17px;
+}
+h3,
+h4 {
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+p {
+  text-align: center;
+}
+
+#left,
+#right {
+  font-size: 25px;
+  background-color: transparent;
+  color: rgb(138, 205, 228);
+  font-weight: bold;
+  cursor: pointer;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+button {
+  border-color: rgb(138, 205, 228);
+  color: rgb(138, 205, 228);
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+button:hover {
+  color: rgb(58, 57, 57);
+  background-color: rgb(138, 205, 228);
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  background-color: rgb(245, 249, 250);
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.3);
+  padding: 20px 35px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
